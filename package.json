@@ -1,0 +1,26 @@
+{
+  "name": "buscador_boe_defensa",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "https://Newtral-datos.github.io/buscador_boe_defensa/",
+  "scripts": {
+    "build": "vite build",
+    "postbuild": "cp dist/index.html dist/404.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^6.1.1",
+    "gh-pages": "^6.3.0",
+    "svelte": "^5.38.1",
+    "vite": "^7.1.2"
+  },
+  "dependencies": {
+    "minisearch": "^7.1.2",
+    "pako": "^2.1.0",
+    "pdf-parse": "^1.1.1",
+    "pdf2json": "^3.2.0",
+    "strip-accents": "^1.0.5"
+  }
+}
